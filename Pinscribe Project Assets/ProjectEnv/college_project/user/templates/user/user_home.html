@@ -1,0 +1,9 @@
+{% extends 'user/user_base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+    {% for post in posts_list %}
+        {{post.as_p}}
+        <p>Content her</p>
+    {% endfor %}
+{% endblock content %}

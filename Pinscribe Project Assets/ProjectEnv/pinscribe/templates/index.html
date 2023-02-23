@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Pin</title>
+{% endblock head %}
+
+{% block body %}
+    {% comment %} data-aos="fade" data-aos-delay="1500" {% endcomment %}
+    <main id="main" >
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Get your next <span>idea</span></h2>
+                        <p>Here's how it works</p>
+                        <a class="cta-btn" href="{% url 'login' %}">Login</a>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center" style='margin-top: 20px;'>
+                        <h2>Search for an idea</h2>
+                        <p>What do you want to try next? Think of something you’re into – such as 'easy chicken dinner' – and see what you find.</p>
+                        
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center" style='margin-top: 20px;'>
+                        <h2>Save idea you like</h2>
+                        <p>Collect your favourites so you can get back to them later.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock body %}
